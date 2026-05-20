@@ -1,32 +1,41 @@
 import ArcGalleryHero from "@/components/ArcGalleryHero";
 
-const Index = () => {
-  const images = [
-    "/freepik__enhance__98192.png",
-    "/LS.png",
-    "/freepik__a-closeup-shot-features-a-glossy-purple-crossshape__48873.png",
-    "/freepik__the-style-is-3d-model-with-octane-render-volumetri__57555.png",
-    "/eqirGoRIJPaIMgEUeliWpNxeFmI.jpg",
-    "/ultra-detailed_close-up_side_profile_of_a_dark-skinned_model_wearing_futuristic_chrome_wraparound_s_ps17q5ms2ptu5t6bdru6_2.png",
-    "/slide.png",
-    "/freepik__abstract-digital-art-featuring-a-series-of-horizon__489.png",
-    "/abstract-blue-gradient.webp",
-    "/VkvvhXlWo3hEBzcqwTpjd_aa4bf9ee998f4ec0b17a8bf16fe3e9e2.jpg",
-    "/hyperrealistic_commercial_product_photography_of_luxury_chrome_sunglasses_on_male_model_extreme_chi_fanguv2w9zx489lcivwa_2.png",
-  ];
+const lockImage1 = "https://cdn.poehali.dev/projects/e481a92a-023e-40e8-951c-2f893aff5003/files/14003b6f-9d0c-483f-b218-9b53176f305b.jpg";
+const lockImage2 = "https://cdn.poehali.dev/projects/e481a92a-023e-40e8-951c-2f893aff5003/files/f263cbd8-1b0a-4a26-90c4-dffea9459468.jpg";
+const lockImage3 = "https://cdn.poehali.dev/projects/e481a92a-023e-40e8-951c-2f893aff5003/files/79b708a5-ca48-4aad-bb58-1c9ab5f07d1a.jpg";
 
+const products = [
+  { image: lockImage1, name: "KAADAS K20F", type: "Биометрический врезной" },
+  { image: lockImage1, name: "Kaadas S110-5W", type: "Врезной электронный" },
+  { image: lockImage1, name: "KAADAS R6-5 Black", type: "Накладной электронный" },
+  { image: lockImage2, name: "Kaadas K30 Gold", type: "Электронный золотой" },
+  { image: lockImage3, name: "Kaadas K9-5W", type: "С монтажным комплектом" },
+  { image: lockImage1, name: "Kaadas LH01", type: "Электронный чёрный" },
+  { image: lockImage1, name: "Kaadas R8-5", type: "Электронный чёрный" },
+  { image: lockImage1, name: "Kaadas R8-5GL", type: "Электронный чёрный" },
+  { image: lockImage1, name: "Kaadas S500-5W", type: "С монтажным комплектом" },
+  { image: lockImage1, name: "Kaadas S500-C5", type: "Электронный чёрный" },
+  { image: lockImage1, name: "Kaadas S500-С5", type: "С монтажным комплектом" },
+  { image: lockImage1, name: "Kaadas Z1 Pro", type: "Электронный чёрный" },
+  { image: lockImage2, name: "Крепёж K9-5", type: "Монтажный комплект" },
+  { image: lockImage2, name: "Крепёж K9-5W", type: "Монтажный комплект" },
+  { image: lockImage2, name: "Крепёж S110-5W", type: "Монтажный комплект" },
+  { image: lockImage3, name: "Комплект S500-C5", type: "Монтажный комплект" },
+];
+
+const Index = () => {
   return (
     <main className="relative min-h-screen bg-background">
       <ArcGalleryHero
-        images={images}
+        products={products}
         startAngle={20}
         endAngle={160}
-        radiusLg={480}
-        radiusMd={360}
-        radiusSm={260}
-        cardSizeLg={120}
-        cardSizeMd={100}
-        cardSizeSm={80}
+        radiusLg={500}
+        radiusMd={380}
+        radiusSm={270}
+        cardSizeLg={115}
+        cardSizeMd={95}
+        cardSizeSm={75}
         className="pt-16 pb-16 md:pt-20 md:pb-20 lg:pt-24 lg:pb-24"
       />
     </main>
